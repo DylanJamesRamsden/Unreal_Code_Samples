@@ -65,16 +65,6 @@ protected:
 	////FUNCTIONS
 	//*******
 
-	/*//Moves the pawn (forwards and backwards)
-	void MoveCameraForward(float Value);
-
-	//Moves the pawn (right and left)
-	void MoveCameraRight(float Value);
-
-	//Rotates the pawn (clockwise and anti-clockwise)
-	void RotateCamera(float Value);*/
-
-	//Extends and shortens the spring arm, resulting in zooming in and out
 	void CameraZoom(float Value);
 	
 	void ComponentInitialization() const;
@@ -89,13 +79,6 @@ public:
 	URTS_TroopSelectionComponent* GetTroopSelectionComponent() const;
 
 private:
-	/*FVector MovementDirection;
-
-	float TargetZoom;
-
-	void CameraMouseMovement(float DeltaTime);
-
-	void CameraKeyboardMovement(float DeltaTime);*/
 
 	void CameraZoomTick(float DeltaTime);
 };
